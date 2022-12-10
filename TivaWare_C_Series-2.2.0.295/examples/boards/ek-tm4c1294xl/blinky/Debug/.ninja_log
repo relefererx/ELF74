@@ -1,0 +1,7 @@
+# ninja log v5
+4	101	6688115715443811	D:/Faculdade/Embarcados/ELF74/TivaWare_C_Series-2.2.0.295/examples/boards/ek-tm4c1294xl/blinky/ewarm/Obj/Source/startup_ewarm.o	c470f9bc77257374
+0	105	6688115715473723	D:/Faculdade/Embarcados/ELF74/TivaWare_C_Series-2.2.0.295/examples/boards/ek-tm4c1294xl/blinky/ewarm/Obj/Source/blinky.o	ed33e1aae5d40e9e
+109	710	6688115721485773	D:/Faculdade/Embarcados/ELF74/TivaWare_C_Series-2.2.0.295/examples/boards/ek-tm4c1294xl/blinky/ewarm/Exe/blinky.out	bd9a921a557e778a
+720	820	6688115722812924	D:/Faculdade/Embarcados/ELF74/TivaWare_C_Series-2.2.0.295/examples/boards/ek-tm4c1294xl/blinky/ewarm/Exe/blinky.bin	49207facc5f3cc53
+1	51	6688147672104221	D:/Faculdade/Embarcados/ELF74/TivaWare_C_Series-2.2.0.295/examples/boards/ek-tm4c1294xl/blinky/ewarm/Exe/blinky.out	bd9a921a557e778a
+59	66	6688147672293706	D:/Faculdade/Embarcados/ELF74/TivaWare_C_Series-2.2.0.295/examples/boards/ek-tm4c1294xl/blinky/ewarm/Exe/blinky.bin	49207facc5f3cc53

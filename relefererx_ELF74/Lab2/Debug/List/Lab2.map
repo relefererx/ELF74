@@ -1,0 +1,391 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  20/Oct/2021  13:55:43
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Exe\Lab2.out
+#    Map file     =
+#        C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\List\Lab2.map
+#    Command line =
+#        -f
+#        C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Exe\Lab2.out.rsp
+#        (C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Obj\Source\blinky.o
+#        C:\Users\azoli\Documents\UTFPR\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a
+#        C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Obj\Source\startup_TM4C1294.o
+#        C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Obj\Source\system_TM4C1294.o
+#        --no_out_extension -o
+#        C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Exe\Lab2.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\List\Lab2.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.0\arm\config\linker\TexasInstruments\TM4C1294NC.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor        = *
+__CPP_Exceptions = Disabled
+__CPP_Language   = C++14
+__Heap_Handler   = Basic
+__SystemLibrary  = DLib
+__dlib_version   = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0xf'ffff] { ro };
+define block CSTACK with size = 32K, alignment = 8 { };
+define block HEAP with size = 64K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2003'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x3c0
+  .intvec            ro code          0x0   0x3c0  startup_TM4C1294.o [1]
+                                  - 0x3c0   0x3c0
+
+"P1":                                      0x277c
+  .text              ro code        0x3c0   0xf12  xprintffull_nomb.o [2]
+  .text              ro code       0x12d2    0x2a  copy_init3.o [6]
+  .text              ro code       0x12fc    0x16  strchr.o [6]
+  .text              ro code       0x1312     0x2  startup_TM4C1294.o [1]
+  .text              ro code       0x1314    0x40  xfail_s.o [2]
+  .text              ro code       0x1354    0x36  strlen.o [6]
+  .rodata            const         0x138a     0x1  unwind_debug.o [7]
+  .text              ro code       0x138c    0x58  memchr.o [6]
+  .text              ro code       0x13e4    0xa6  ABImemcpy.o [6]
+  .text              ro code       0x148c    0x70  frexp.o [5]
+  .text              ro code       0x14fc    0x34  DblCmpLe.o [5]
+  .text              ro code       0x1530    0x34  DblCmpGe.o [5]
+  .text              ro code       0x1564   0x13a  ldexp.o [5]
+  .text              ro code       0x16a0    0x36  DblToS32.o [5]
+  .text              ro code       0x16d8    0x22  S32ToDbl.o [5]
+  .text              ro code       0x16fc   0x24e  DblAddSub.o [5]
+  .text              ro code       0x194c   0x246  DblDiv.o [5]
+  .text              ro code       0x1b94    0x22  DblToU32.o [5]
+  .text              ro code       0x1bb8    0x1c  U32ToDbl.o [5]
+  .text              ro code       0x1bd4   0x1aa  DblMul.o [5]
+  .text              ro code       0x1d80   0x230  I64DivMod.o [6]
+  .text              ro code       0x1fb0     0x6  abort.o [2]
+  .text              ro code       0x1fb8     0x2  I64DivZer.o [6]
+  .text              ro code       0x1fbc    0x14  exit.o [7]
+  .text              ro code       0x1fd0    0x7c  iarttio.o [7]
+  .text              ro code       0x204c     0x8  XShttio.o [2]
+  .text              ro code       0x2054   0x1f8  system_TM4C1294.o [1]
+  .text              ro code       0x224c   0x1f8  gpio.o [4]
+  .rodata            const         0x2444   0x1b0  system_TM4C1294.o [1]
+  .text              ro code       0x25f4   0x148  blinky.o [1]
+  .text              ro code       0x273c     0xa  clock.o [7]
+  .text              ro code       0x2748    0x48  sysctl.o [4]
+  .text              ro code       0x2790    0x40  interrupt.o [4]
+  .text              ro code       0x27d0    0x48  systick.o [4]
+  .text              ro code       0x2818    0x28  printf.o [2]
+  .text              ro code       0x2840    0x68  DblToFlt.o [5]
+  .text              ro code       0x28a8    0x48  FltToDbl.o [5]
+  .text              ro code       0x28f0     0x8  cpu.o [4]
+  .rodata            const         0x28f8    0x6c  system_TM4C1294.o [1]
+  .rodata            const         0x2964    0x30  system_TM4C1294.o [1]
+  .rodata            const         0x2994    0x2c  blinky.o [1]
+  .text              ro code       0x29c0    0x28  data_init.o [6]
+  .text              ro code       0x29e8    0x22  iarwrite.o [7]
+  .iar.init_table    const         0x2a0c    0x14  - Linker created -
+  .text              ro code       0x2a20    0x20  putchar.o [2]
+  .text              ro code       0x2a40    0x10  write.o [7]
+  .text              ro code       0x2a50    0x1e  dwrite.o [7]
+  .text              ro code       0x2a6e    0x20  iarwstd.o [7]
+  .text              ro code       0x2a90    0x1e  cmain.o [6]
+  .text              ro code       0x2aae     0x4  low_level_init.o [2]
+  .text              ro code       0x2ab2     0x4  exit.o [2]
+  .text              ro code       0x2ab8     0xa  cexit.o [6]
+  .text              ro code       0x2ac4    0x1c  cstartup_M.o [6]
+  .text              ro code       0x2ae0    0x14  startup_TM4C1294.o [1]
+  .rodata            const         0x2af4    0x18  blinky.o [1]
+  .text              ro code       0x2b0c    0x16  xprout.o [2]
+  Initializer bytes  const         0x2b24    0x10  <for P2-1>
+  .rodata            const         0x2b34     0x8  system_TM4C1294.o [1]
+  .rodata            const         0x2b3c     0x0  copy_init3.o [6]
+                                 - 0x2b3c  0x277c
+
+"P2", part 1 of 2:                           0x10
+  P2-1                        0x2000'0000    0x10  <Init block>
+    .data            inited   0x2000'0000     0x8  XShttio.o [2]
+    .bss             inited   0x2000'0008     0x4  blinky.o [1]
+    .bss             inited   0x2000'000c     0x4  xfail_s.o [2]
+                            - 0x2000'0010    0x10
+
+"P2", part 2 of 2:                         0x8270
+  VTABLE             uninit   0x2000'0400   0x26c  interrupt.o [4]
+  .noinit            uninit   0x2000'066c     0x4  system_TM4C1294.o [1]
+  CSTACK                      0x2000'0670  0x8000  <Block>
+    CSTACK           uninit   0x2000'0670  0x8000  <Block tail>
+                            - 0x2000'8670  0x8270
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x2b3c     0xf'ffff  0xf'd4c4
+  0x2000'0010  0x2000'03ff     0x3f0
+  0x2000'8670  0x2003'ffff  0x3'7990
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+               0x2b24  0x10
+    1 destination range, total size 0x10:
+          0x2000'0000  0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data
+    ------              -------  -------  -------
+command line/config:
+    ---------------------------------------------
+    Total:
+
+C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Obj\Source: [1]
+    blinky.o                328       72        4
+    startup_TM4C1294.o      982
+    system_TM4C1294.o       504      596        4
+    ---------------------------------------------
+    Total:                1'814      668        8
+
+dl7M_tln.a: [2]
+    XShttio.o                 8        8        8
+    abort.o                   6
+    exit.o                    4
+    low_level_init.o          4
+    printf.o                 40
+    putchar.o                32
+    xfail_s.o                64        4        4
+    xprintffull_nomb.o    3'858
+    xprout.o                 22
+    ---------------------------------------------
+    Total:                4'038       12       12
+
+dlpp7M_tl_nc.a: [3]
+    ---------------------------------------------
+    Total:
+
+driverlib.a: [4]
+    cpu.o                     8
+    gpio.o                  504
+    interrupt.o              64               620
+    sysctl.o                 72
+    systick.o                72
+    ---------------------------------------------
+    Total:                  720               620
+
+m7M_tls.a: [5]
+    DblAddSub.o             590
+    DblCmpGe.o               52
+    DblCmpLe.o               52
+    DblDiv.o                582
+    DblMul.o                426
+    DblToFlt.o              104
+    DblToS32.o               54
+    DblToU32.o               34
+    FltToDbl.o               72
+    S32ToDbl.o               34
+    U32ToDbl.o               28
+    frexp.o                 112
+    ldexp.o                 314
+    ---------------------------------------------
+    Total:                2'454
+
+rt7M_tl.a: [6]
+    ABImemcpy.o             166
+    I64DivMod.o             560
+    I64DivZer.o               2
+    cexit.o                  10
+    cmain.o                  30
+    copy_init3.o             42
+    cstartup_M.o             28
+    data_init.o              40
+    memchr.o                 88
+    strchr.o                 22
+    strlen.o                 54
+    ---------------------------------------------
+    Total:                1'042
+
+shb_l.a: [7]
+    clock.o                  10
+    dwrite.o                 30
+    exit.o                   20
+    iarttio.o               124
+    iarwrite.o               34
+    iarwstd.o                32
+    unwind_debug.o                     1
+    write.o                  16
+    ---------------------------------------------
+    Total:                  266        1
+
+    Gaps                     29        2
+    Linker created                    22   32'768
+-------------------------------------------------
+    Grand Total:         10'363      705   33'408
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x2a0c          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x2a20          --   Gb  - Linker created -
+?main                        0x2a91         Code  Gb  cmain.o [6]
+CPUcpsie                     0x28f1    0x8  Code  Gb  cpu.o [4]
+CSTACK$$Base            0x2000'0670          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'8670          --   Gb  - Linker created -
+GPIODirModeSet               0x224d   0x28  Code  Gb  gpio.o [4]
+GPIOPadConfigSet             0x2275  0x176  Code  Gb  gpio.o [4]
+GPIOPinRead                  0x23eb    0x8  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOInput         0x23ff   0x14  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOOutput        0x2413    0xa  Code  Gb  gpio.o [4]
+GPIOPinWrite                 0x23f3    0x8  Code  Gb  gpio.o [4]
+IntMasterEnable              0x2791    0x8  Code  Gb  interrupt.o [4]
+IntRegister                  0x27a1   0x28  Code  Gb  interrupt.o [4]
+Region$$Table$$Base          0x2a0c          --   Gb  - Linker created -
+Region$$Table$$Limit         0x2a20          --   Gb  - Linker created -
+SysCtlPeripheralEnable       0x276b    0x8  Code  Gb  sysctl.o [4]
+SysCtlPeripheralReady        0x2749    0x8  Code  Gb  sysctl.o [4]
+SysTickEnable                0x27d1    0xc  Code  Gb  systick.o [4]
+SysTickIntEnable             0x27f3    0xc  Code  Gb  systick.o [4]
+SysTickIntRegister           0x27dd   0x16  Code  Gb  systick.o [4]
+SysTickPeriodSet             0x27ff    0x8  Code  Gb  systick.o [4]
+SysTickValueGet              0x2807    0x6  Code  Gb  systick.o [4]
+SystemCoreClock         0x2000'066c    0x4  Data  Gb  system_TM4C1294.o [1]
+SystemInit                   0x20c9  0x13e  Code  Gb  system_TM4C1294.o [1]
+[local to system_TM4C1294_c]::_SysCtlFrequencyGet(unsigned int)
+                             0x2077   0x52  Code  Lc  system_TM4C1294.o [1]
+[local to system_TM4C1294_c]::_SysCtlMemTimingGet(unsigned int)
+                             0x2055   0x22  Code  Lc  system_TM4C1294.o [1]
+_LitobFullNoMb               0x10d9  0x10c  Code  Lc  xprintffull_nomb.o [2]
+_PrintfFullNoMb               0x3c1  0xcea  Code  Gb  xprintffull_nomb.o [2]
+_Prout                       0x2b0d   0x16  Code  Gb  xprout.o [2]
+_PutcharFullNoMb             0x123d   0x20  Code  Lc  xprintffull_nomb.o [2]
+_PutcharsFullNoMb            0x125d   0x2e  Code  Lc  xprintffull_nomb.o [2]
+__Vectors                       0x0          --   Gb  startup_TM4C1294.o [1]
+__Vectors_End                 0x3c0         Data  Gb  startup_TM4C1294.o [1]
+__Vectors_Size {Abs}          0x3c0          --   Gb  startup_TM4C1294.o [1]
+__aeabi_cdcmple              0x14fd         Code  Gb  DblCmpLe.o [5]
+__aeabi_cdrcmple             0x1531         Code  Gb  DblCmpGe.o [5]
+__aeabi_d2f                  0x2841         Code  Gb  DblToFlt.o [5]
+__aeabi_d2iz                 0x16a1         Code  Gb  DblToS32.o [5]
+__aeabi_d2uiz                0x1b95         Code  Gb  DblToU32.o [5]
+__aeabi_ddiv                 0x194d         Code  Gb  DblDiv.o [5]
+__aeabi_dmul                 0x1bd5         Code  Gb  DblMul.o [5]
+__aeabi_dsub                 0x1869         Code  Gb  DblAddSub.o [5]
+__aeabi_f2d                  0x28a9         Code  Gb  FltToDbl.o [5]
+__aeabi_i2d                  0x16d9         Code  Gb  S32ToDbl.o [5]
+__aeabi_ldiv0                0x1fb9         Code  Gb  I64DivZer.o [6]
+__aeabi_memcpy               0x13e5         Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy4              0x1405         Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy8              0x1405         Code  Gb  ABImemcpy.o [6]
+__aeabi_ui2d                 0x1bb9         Code  Gb  U32ToDbl.o [5]
+__aeabi_uldivmod             0x1d81         Code  Gb  I64DivMod.o [6]
+__cmain                      0x2a91         Code  Gb  cmain.o [6]
+__dwrite                     0x2a51   0x1e  Code  Gb  dwrite.o [7]
+__exit                       0x1fbd   0x14  Code  Gb  exit.o [7]
+__iar_Fail_s                 0x1315   0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr                 0x138d         Code  Gb  memchr.o [6]
+__iar_Strchr                 0x12fd         Code  Gb  strchr.o [6]
+__iar_close_ttio             0x1fd1   0x2c  Code  Gb  iarttio.o [7]
+__iar_copy_init3             0x12d3   0x2a  Code  Gb  copy_init3.o [6]
+__iar_data_init3             0x29c1   0x28  Code  Gb  data_init.o [6]
+__iar_debug_exceptions       0x138a    0x1  Data  Gb  unwind_debug.o [7]
+__iar_frexp                  0x1499         Code  Gb  frexp.o [5]
+__iar_frexpl                 0x1499         Code  Gb  frexp.o [5]
+__iar_get_ttio               0x1ffd   0x4c  Code  Gb  iarttio.o [7]
+__iar_init_vfp               0x2ae9         Code  Wk  startup_TM4C1294.o [1]
+__iar_ldexp64                0x1565         Code  Gb  ldexp.o [5]
+__iar_lookup_ttioh           0x204d    0x8  Code  Gb  XShttio.o [2]
+__iar_program_start          0x2ac5         Code  Gb  cstartup_M.o [6]
+__iar_scalbln64              0x1565         Code  Gb  ldexp.o [5]
+__iar_scalbn64               0x1565         Code  Gb  ldexp.o [5]
+__iar_sh_stdout              0x2a6f   0x20  Code  Gb  iarwstd.o [7]
+__iar_sh_write               0x29e9   0x22  Code  Gb  iarwrite.o [7]
+__iar_softfp___iar_frexp64
+                             0x148d         Code  Gb  frexp.o [5]
+__iar_softfp_frexp           0x148d         Code  Gb  frexp.o [5]
+__iar_softfp_frexpl          0x148d         Code  Gb  frexp.o [5]
+__iar_ttio_handles      0x2000'0000    0x8  Data  Lc  XShttio.o [2]
+__low_level_init             0x2aaf    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0         Data  Gb  startup_TM4C1294.o [1]
+__vector_table_0x1c            0x1c         Data  Gb  startup_TM4C1294.o [1]
+__write                      0x2a41   0x10  Code  Gb  write.o [7]
+_call_main                   0x2a9d         Code  Gb  cmain.o [6]
+_exit                        0x2ab9         Code  Gb  cexit.o [6]
+abort                        0x1fb1    0x6  Code  Gb  abort.o [2]
+clock                        0x273d    0xa  Code  Gb  clock.o [7]
+count                   0x2000'0008    0x4  Data  Gb  blinky.o [1]
+delay(int)                   0x2601   0x1c  Code  Gb  blinky.o [1]
+exit                         0x2ab3    0x4  Code  Gb  exit.o [2]
+g_pfnRAMVectors         0x2000'0400  0x26c  Data  Lc  interrupt.o [4]
+g_pppui32XTALtoVCO           0x2444  0x1b0  Data  Lc  system_TM4C1294.o [1]
+g_pui32VCOFrequencies        0x2b34    0x8  Data  Lc  system_TM4C1294.o [1]
+g_pui32Xtals                 0x28f8   0x6c  Data  Lc  system_TM4C1294.o [1]
+g_sXTALtoMEMTIM              0x2964   0x30  Data  Lc  system_TM4C1294.o [1]
+incrementCounter()           0x25f5    0xc  Code  Gb  blinky.o [1]
+ldexp                        0x1565         Code  Gb  ldexp.o [5]
+ldexpl                       0x1565         Code  Gb  ldexp.o [5]
+main                         0x265d   0xb4  Code  Gb  blinky.o [1]
+memchr                       0x138d         Code  Gb  memchr.o [6]
+prepare()                    0x261d   0x40  Code  Gb  blinky.o [1]
+printf                       0x2819   0x28  Code  Gb  printf.o [2]
+putchar                      0x2a21   0x20  Code  Gb  putchar.o [2]
+scalbln                      0x1565         Code  Gb  ldexp.o [5]
+scalblnl                     0x1565         Code  Gb  ldexp.o [5]
+scalbn                       0x1565         Code  Gb  ldexp.o [5]
+scalbnl                      0x1565         Code  Gb  ldexp.o [5]
+scale                        0x11e5   0x46  Code  Lc  xprintffull_nomb.o [2]
+sec_hand                0x2000'000c    0x4  Data  Lc  xfail_s.o [2]
+strchr                       0x12fd         Code  Gb  strchr.o [6]
+strlen                       0x1355         Code  Gb  strlen.o [6]
+
+
+[1] = C:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Obj\Source
+[2] = dl7M_tln.a
+[3] = dlpp7M_tl_nc.a
+[4] = driverlib.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+  10'363 bytes of readonly  code memory
+     705 bytes of readonly  data memory
+  33'408 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

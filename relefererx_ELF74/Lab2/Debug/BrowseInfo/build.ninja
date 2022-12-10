@@ -1,0 +1,51 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\src\blinky.c -xcl_file C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.xcl -macro_file C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\src\blinky.c -o C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Obj\Source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\..\..\TivaWare_C_Series-2.2.0.295\ -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.tmp
+  rspfile_name = C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.xcl.rsp
+
+build C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\src\system_TM4C1294.c -xcl_file C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.xcl -macro_file C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\src\system_TM4C1294.c -o C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\Obj\Source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\..\..\TivaWare_C_Series-2.2.0.295\ -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.tmp
+  rspfile_name = C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.xcl.rsp
+
+build C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.pbi : INDEXER C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.xcl |  $
+C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\src\blinky.c
+  flags = -out=C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.pbi -f C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.xcl
+
+build C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.pbi : INDEXER C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.xcl |  $
+C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\src\system_TM4C1294.c
+  flags = -out=C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.pbi -f C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.xcl
+
+build C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Lab2.pbw : MAKEBROWSE C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Lab2.pbd
+  flags = C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Lab2.pbd -output C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Lab2.pbw
+
+build C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Lab2.pbd : PDBLINK C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.pbi |  $
+C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.pbi
+  flags = -M C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Lab2.pbd C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\blinky.pbi C$:\Users\azoli\Documents\UTFPR\mariaAzolin_ELF74\Lab2\Debug\BrowseInfo\Source\system_TM4C1294.pbi
+

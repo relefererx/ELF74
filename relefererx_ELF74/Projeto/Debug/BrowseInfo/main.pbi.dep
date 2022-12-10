@@ -1,0 +1,31 @@
+D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\Debug\BrowseInfo\main.pbi: \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\driverlib\interrupt.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\inttypes.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\driverlib\systick.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdarg.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\utils\uartstdio.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\src\system_TM4C1294.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\driverlib\pin_map.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\driverlib\uart.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\driverlib\sysctl.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\driverlib\gpio.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iar_intrinsics_common.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\intrinsics.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_stdlib.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdlib.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\ThreadX\ports\cortex_m4\iar\inc\tx_port.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\ThreadX\common\inc\tx_api.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\..\..\TivaWare_C_Series-2.2.0.295\inc\hw_memmap.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\string.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ysizet.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdio.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdbool.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Normal.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\ELF74\relefererx_ELF74\Projeto\src\main.c

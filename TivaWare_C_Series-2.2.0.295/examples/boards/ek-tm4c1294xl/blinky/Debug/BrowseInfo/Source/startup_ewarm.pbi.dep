@@ -1,0 +1,10 @@
+D:\Faculdade\Embarcados\ELF74\TivaWare_C_Series-2.2.0.295\examples\boards\ek-tm4c1294xl\blinky\Debug\BrowseInfo\Source\startup_ewarm.pbi: \
+  D:\Faculdade\Embarcados\ELF74\relefererx_ELF74\Lab2\blinky\startup_ewarm.c \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Normal.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  D:\Faculdade\Embarcados\ELF74\TivaWare_C_Series-2.2.0.295\examples\boards\ek-tm4c1294xl\blinky\..\..\..\..\inc\hw_nvic.h \
+  D:\Faculdade\Embarcados\ELF74\TivaWare_C_Series-2.2.0.295\examples\boards\ek-tm4c1294xl\blinky\..\..\..\..\inc\hw_types.h

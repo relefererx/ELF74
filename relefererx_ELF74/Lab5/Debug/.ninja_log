@@ -1,0 +1,15 @@
+# ninja log v5
+0	661	6592241922200255	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/tx_initialize_low_level.o	7f9884e83306803a
+672	715	6592241922746886	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/cstartup_M.o	468ebe7f5346c81c
+728	2185	6592241936919888	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/sample_threadx.o	e49cc8b40f7c965d
+2216	3736	6592241952629409	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Exe/Lab5.out	3eeb35e0d0f62b4c
+2	60	6592242782765091	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/tx_initialize_low_level.o	410f5af1d88520
+71	116	6592242783225999	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/cstartup_M.o	2d0d4cc4b815ce64
+127	375	6592242785833943	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/sample_threadx.o	94daee17a3c75e1d
+396	630	6592242788163649	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Exe/Lab5.out	bffa5d51d9abacdf
+4	66	6592244461705165	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/cstartup_M.o	2d0d4cc4b815ce64
+85	159	6592244462555310	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/tx_initialize_low_level.o	410f5af1d88520
+188	510	6592244465915495	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Obj/src/sample_threadx.o	94daee17a3c75e1d
+540	828	6592244468892021	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Exe/Lab5.out	27bc78d42adaf8f5
+540	828	6592244468892021	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/List/Lab5.map	27bc78d42adaf8f5
+3	270	6592244511879833	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab5/Debug/Exe/Lab5.out	bffa5d51d9abacdf

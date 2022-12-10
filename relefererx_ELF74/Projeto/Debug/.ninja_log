@@ -1,0 +1,27 @@
+# ninja log v5
+1	107	6613215918832375	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Projeto/Debug/Obj/tx_initialize_low_level.o	1c4adc08ebb654ed
+125	193	6613215919767180	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Projeto/Debug/Obj/startup_TM4C1294.o	173eedc940eb0bdd
+206	1261	6613215930280301	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Projeto/Debug/Obj/main.o	298c42edbff8e432
+1281	1518	6613215932979892	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Projeto/Debug/Obj/system_TM4C1294.o	9f849960ca9b66dd
+1544	2826	6613215945837235	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Projeto/Debug/Exe/Projeto.out	b726db289718ae5b
+445	498	6918985429643858	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/startup_TM4C1294.o	cef6ac60b8f2f3b2
+9	507	6918985429643858	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/tx_initialize_low_level.o	5391975b4d2e56a6
+500	993	6918985434522840	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/system_TM4C1294.o	d4ed74740567058a
+1	1039	6918985434893190	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/main.o	b0b9ff57ff3a64c4
+1054	1780	6918985442147225	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Exe/Projeto.out	df17a9b99d04d79f
+1	17	6918990810461618	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/tx_initialize_low_level.o	5391975b4d2e56a6
+9	25	6918990810533966	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/startup_TM4C1294.o	cef6ac60b8f2f3b2
+20	210	6918990812311185	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/system_TM4C1294.o	d4ed74740567058a
+5	302	6918990813225122	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Obj/main.o	b0b9ff57ff3a64c4
+309	423	6918990814398018	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Exe/Projeto.out	df17a9b99d04d79f
+180	956	6918994990649844	C:/Users/relef/Downloads/mariaAzolin_ELF74-main/mariaAzolin_ELF74-main/Projeto/Debug/Exe/Projeto.out	5d6dd8b625adb62e
+28	337	6924056457678193	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/Projeto/Debug/Obj/startup_TM4C1294.o	760370029f1344f4
+284	372	6924056457882438	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/Projeto/Debug/Obj/tx_initialize_low_level.o	438e59b1c1c8e138
+286	1020	6924056464368128	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/Projeto/Debug/Obj/system_TM4C1294.o	ee7f5a7e6a0e78d6
+339	1040	6924056464617906	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/Projeto/Debug/Obj/main.o	b60b6fb134fed1bd
+1062	1963	6924056473193289	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/Projeto/Debug/Exe/Projeto.out	32165601c297fafd
+1	46	6924063462112049	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/ELF74/relefererx_ELF74/Projeto/Debug/Obj/tx_initialize_low_level.o	b7e44d5addcf23b
+22	70	6924063462292014	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/ELF74/relefererx_ELF74/Projeto/Debug/Obj/startup_TM4C1294.o	7ca3cd4348e1a64a
+48	491	6924063466481755	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/ELF74/relefererx_ELF74/Projeto/Debug/Obj/system_TM4C1294.o	935d919980319b93
+19	725	6924063468812899	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/ELF74/relefererx_ELF74/Projeto/Debug/Obj/main.o	b4ef60fc69fcde4f
+734	1182	6924063473382827	D:/Faculdade/Embarcados/ELF74/relefererx_ELF74/ELF74/relefererx_ELF74/Projeto/Debug/Exe/Projeto.out	1a69a2b15dfe64ab

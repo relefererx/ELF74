@@ -1,0 +1,9 @@
+# ninja log v5
+0	1961	6546539826693392	C:/Users/azoli/Documents/UTFPR/SistemasEmbarcados/Lab1/Debug/Obj/main.o	ae3ec4768e5e371f
+1	948	6546540528350995	C:/Users/azoli/Documents/UTFPR/SistemasEmbarcados/Lab1/Debug/Exe/HelloWorld.out	74575db807f874b8
+9	1497	6546560401531244	C:/Users/azoli/Documents/UTFPR/SistemasEmbarcados/Lab1/Debug/Obj/main.o	aea26470bffa7c7d
+1520	1928	6546560405956278	C:/Users/azoli/Documents/UTFPR/SistemasEmbarcados/Lab1/Debug/Exe/HelloWorld.out	d83292f74c689b48
+228	1423	6550892480595837	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab1/Debug/Obj/main.o	a2eefb7fb14022c1
+1438	2774	6550892494506307	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab1/Debug/Exe/HelloWorld.out	6253970bbc187566
+1438	2774	6550892494506307	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab1/Debug/List/HelloWorld.map	6253970bbc187566
+4	194	6550892553972553	C:/Users/azoli/Documents/UTFPR/mariaAzolin_ELF74/Lab1/Debug/Exe/HelloWorld.out	d35988d88e46827c
